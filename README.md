@@ -17,7 +17,7 @@ The analysis seeks to answer, among others, the following key business questions
 
 The interactive [Tableau dashboard](https://public.tableau.com/app/profile/manuel.marienhoff/viz/PizzaSalesReport_17727340650500/HOMEDB) is available for online exploration and download
 
-You can view the [complete SQL analysis script](pizzaSalesQueries.sql) used to extract, analyze, and prepare the data for Tableu.
+You can view the [complete SQL analysis script](pizzaSalesQueries.sql) used to extract, analyze, and prepare the data for Tableau.
 
 The source [dataset](pizza_sales.csv) utilized in this project is available for download.
 
