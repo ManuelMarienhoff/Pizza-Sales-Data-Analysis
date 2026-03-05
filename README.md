@@ -19,7 +19,8 @@ The interactive [Tableau dashboard](https://public.tableau.com/app/profile/manue
 
 You can view the [complete SQL analysis script](pizzaSalesQueries.sql) used to extract, analyze, and prepare the data for Tableu.
 
-The source [dataset](pizza_sales.csv) utilized in this project is available for download
+The source [dataset](pizza_sales.csv) utilized in this project is available for download.
+
 ---
 
 ## 2. Data Structure Overview
