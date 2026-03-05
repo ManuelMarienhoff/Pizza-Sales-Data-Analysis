@@ -17,7 +17,9 @@ The analysis seeks to answer, among others, the following key business questions
 
 The interactive [Tableau dashboard](https://public.tableau.com/app/profile/manuel.marienhoff/viz/PizzaSalesReport_17727340650500/HOMEDB) is available for online exploration and download
 
-You can view the [complete SQL analysis script] used to extract, analyze, and prepare the data for Tableau
+You can view the [complete SQL analysis script](pizzaSalesQueries.sql) used to extract, analyze, and prepare the data for Tableu.
+
+The source [dataset](pizza_sales.csv) utilized in this project is available for download
 ---
 
 ## 2. Data Structure Overview
@@ -34,7 +36,7 @@ To facilitate understanding and subsequent SQL analysis, the data structure is l
 ## 3. Executive Summary: Overview of Findings
 The commercial performance of the pizzeria during 2015 reveals a business with a consistent volume averaging 935 sales per week, driven by a bimodal demand model featuring highly profitable, high-ticket corporate lunches on weekdays and a sharp shift toward nighttime sales on weekends. By isolating the price effect from volume, the analysis uncovered critical operational inefficiencies, specifically capital leakage tied to zero-turnover items with exclusive ingredients (e.g., *The Brie Carre Pizza*) and logistical friction from marginal XL/XXL formats. These findings present immediate opportunities to streamline the supply chain, boost the Average Order Value (AOV) through targeted cross-selling on the dominant 'Large' size, and optimize staff allocation to maximize overall profitability.
 
-Below is the overview page from the Tableau dashboard and more examples are included throughout the report. The entire interactive dashboard can be visited [here](https://public.tableau.com/app/profile/manuel.marienhoff/viz/PizzaSalesReport_17727340650500/HOMEDB).
+Below is the overview page from the Tableau dashboard and more examples are included throughout the report. The entire [interactive dashboard](https://public.tableau.com/app/profile/manuel.marienhoff/viz/PizzaSalesReport_17727340650500/HOMEDB) can be visited.
 
 <img width="1300" height="300" alt="image" src="https://github.com/user-attachments/assets/d0463dc5-25ed-408f-b8b8-41ec504df744" />
 
