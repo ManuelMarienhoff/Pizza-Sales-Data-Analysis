@@ -14,6 +14,10 @@ The analysis seeks to answer, among others, the following key business questions
 * Are there underperforming products or rare ingredients causing inventory inefficiencies (capital leakage)?
 * What is the Average Order Value (AOV), and how many pizzas are sold per order on average?
 * How does customer purchasing behavior differ between weekdays and weekends?
+
+The interactive [Tableau dashboard](https://public.tableau.com/app/profile/manuel.marienhoff/viz/PizzaSalesReport_17727340650500/HOMEDB) is available for online exploration and download
+
+You can view the [complete SQL analysis script] used to extract, analyze, and prepare the data for Tableau
 ---
 
 ## 2. Data Structure Overview
@@ -30,9 +34,10 @@ To facilitate understanding and subsequent SQL analysis, the data structure is l
 ## 3. Executive Summary: Overview of Findings
 The commercial performance of the pizzeria during 2015 reveals a business with a consistent volume averaging 935 sales per week, driven by a bimodal demand model featuring highly profitable, high-ticket corporate lunches on weekdays and a sharp shift toward nighttime sales on weekends. By isolating the price effect from volume, the analysis uncovered critical operational inefficiencies, specifically capital leakage tied to zero-turnover items with exclusive ingredients (e.g., *The Brie Carre Pizza*) and logistical friction from marginal XL/XXL formats. These findings present immediate opportunities to streamline the supply chain, boost the Average Order Value (AOV) through targeted cross-selling on the dominant 'Large' size, and optimize staff allocation to maximize overall profitability.
 
-Below is the overview page from the Tableau dashboard and more examples are included throughout the report. The entire interactive dashboard can be visited here.
+Below is the overview page from the Tableau dashboard and more examples are included throughout the report. The entire interactive dashboard can be visited [here](https://public.tableau.com/app/profile/manuel.marienhoff/viz/PizzaSalesReport_17727340650500/HOMEDB).
 
-<img width="1289" height="300" alt="image" src="https://github.com/user-attachments/assets/fe84e5d4-2966-4011-b1cb-f5ff3c009a3b" />
+<img width="1300" height="300" alt="image" src="https://github.com/user-attachments/assets/d0463dc5-25ed-408f-b8b8-41ec504df744" />
+
 
 
 
@@ -46,14 +51,15 @@ By cross-referencing temporal and transactional variables in SQL, we identified 
 * **Seasonality and Anomalies:** Weekly volume peaks in **Week 48** (1,186 pizzas sold). Conversely, **Week 39** recorded the historical minimum (674 pizzas), highlighting a total absence of sales on Thursday and Friday. Given that these are typically high-revenue days, we infer an operational anomaly (e.g., store closure due to maintenance or force majeure).
 * **Daily Performance:** The days with the highest sales volume are **Friday, Saturday, and Thursday** (in that order). Sunday shows the lowest performance of the entire week.
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/9945dea0-5624-433a-8bad-695415f796a2" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/1bc04861-6ada-49a5-ad89-94c384605774" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/f734c7b8-eede-4c3c-8744-9ca76e75f755" />
+
 
 ### B. General Behavior by Time Slot
 The business operates heavily under a bimodal model, but with a clear dominance in midday intensity:
 * **Lunch (12:00 PM - 1:59 PM - Main Peak):** This is the time of highest traffic and sales intensity for the store. It generated $217.8K in revenue (13.2K pizzas across 5K orders). Purchasing behavior is highly profitable: the **Average Order Value (AOV) is high ($43.81)**, with an average of **3 pizzas per order**. This suggests a strong component of corporate purchases or large groups.
 * **Dinner (5:00 PM - 7:59 PM - Secondary Peak):** Although it covers a broader time slot, the traffic intensity per hour is lower than at lunch. It generated $248K in revenue (15K pizzas across 6.7K orders). The purchasing profile changes drastically: the nighttime customer spends less, with an **AOV of $36.80** and smaller carts of **2 pizzas per order** (individual or couples' purchases).
 
-<img width="1200" height="300" alt="image" src="https://github.com/user-attachments/assets/d255e765-0720-48b2-84db-cbd78198b605" />
+<img width="1200" height="350" alt="image" src="https://github.com/user-attachments/assets/d255e765-0720-48b2-84db-cbd78198b605" />
 
 
 ### C. Weekday vs. Weekend (Business Rotation)
@@ -82,7 +88,7 @@ Analyzing the *Product Mix* by pizza size shows a strong polarization in consume
 * **The anchor of the business:** The **'Large' (L)** size unquestionably dominates sales volume and revenue, establishing itself as the standard or default option in the customer's mind.
 * **Inefficient formats:** At the opposite end, extra-large formats (**'XL' and 'XXL'**) have a marginal and statistically insignificant market share compared to the rest of the sizes.
 
-> <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/d6315030-ccda-4105-b74f-e89db0e59356" />
+ <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/d6315030-ccda-4105-b74f-e89db0e59356" />
 
 
 ---
